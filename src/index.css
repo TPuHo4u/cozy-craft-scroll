@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,70 +6,108 @@
 
 @layer base {
   :root {
-    --background: 30 30% 95%;
-    --foreground: 20 30% 15%;
+    /* Light theme: Warm Italian café vibes */
+    --background: 38 35% 96%;
+    --foreground: 25 45% 15%;
 
-    --card: 30 25% 97%;
-    --card-foreground: 20 30% 15%;
+    --card: 40 40% 98%;
+    --card-foreground: 25 45% 15%;
 
-    --popover: 30 25% 97%;
-    --popover-foreground: 20 30% 15%;
+    --popover: 40 40% 98%;
+    --popover-foreground: 25 45% 15%;
 
-    --primary: 0 50% 30%;
-    --primary-foreground: 30 30% 95%;
+    /* Warm amber/caramel primary */
+    --primary: 28 80% 45%;
+    --primary-foreground: 40 30% 98%;
 
-    --secondary: 30 20% 90%;
-    --secondary-foreground: 20 30% 20%;
+    --secondary: 35 30% 92%;
+    --secondary-foreground: 25 40% 25%;
 
-    --muted: 30 15% 88%;
-    --muted-foreground: 20 10% 45%;
+    --muted: 35 25% 90%;
+    --muted-foreground: 25 20% 45%;
 
-    --accent: 25 35% 85%;
-    --accent-foreground: 20 30% 15%;
+    --accent: 30 45% 88%;
+    --accent-foreground: 25 45% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 20% 85%;
-    --input: 30 20% 85%;
-    --ring: 0 50% 30%;
+    --border: 35 30% 88%;
+    --input: 35 30% 88%;
+    --ring: 28 80% 45%;
 
     --radius: 1rem;
 
-    --coffee-dark: 20 40% 20%;
-    --coffee-medium: 25 30% 35%;
-    --coffee-light: 30 25% 75%;
-    --cream: 35 40% 92%;
-    --warm-white: 40 30% 98%;
+    /* Coffee palette - warm, inviting */
+    --coffee-dark: 25 55% 18%;
+    --coffee-medium: 28 35% 38%;
+    --coffee-light: 32 30% 65%;
+    --cream: 42 50% 94%;
+    --warm-white: 45 40% 98%;
+    --espresso: 20 60% 12%;
+    --caramel: 30 70% 55%;
+    --copper: 25 65% 50%;
 
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'DM Serif Display', serif;
+    --font-body: 'Instrument Sans', sans-serif;
 
-    --gradient-hero: linear-gradient(135deg, hsl(30 30% 95%) 0%, hsl(25 25% 88%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(30 30% 98% / 0.8) 0%, hsl(30 25% 95% / 0.6) 100%);
-    --shadow-soft: 0 8px 32px hsl(20 30% 15% / 0.08);
-    --shadow-card: 0 4px 24px hsl(20 30% 15% / 0.06);
-    --shadow-button: 0 4px 16px hsl(0 50% 30% / 0.25);
+    --gradient-hero: linear-gradient(165deg, hsl(42 50% 97%) 0%, hsl(35 40% 92%) 50%, hsl(30 35% 88%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(40 45% 99% / 0.95) 0%, hsl(38 40% 96% / 0.85) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(28 80% 50%) 0%, hsl(35 75% 55%) 100%);
+    --shadow-soft: 0 8px 40px hsl(25 50% 15% / 0.1);
+    --shadow-card: 0 4px 30px hsl(25 45% 20% / 0.08), 0 1px 3px hsl(25 45% 20% / 0.05);
+    --shadow-button: 0 4px 20px hsl(28 80% 45% / 0.35), 0 2px 8px hsl(28 80% 45% / 0.2);
+    --shadow-glow: 0 0 40px hsl(28 80% 50% / 0.15);
   }
 
   .dark {
-    --background: 20 25% 10%;
-    --foreground: 30 20% 90%;
-    --card: 20 20% 15%;
-    --card-foreground: 30 20% 90%;
-    --popover: 20 20% 15%;
-    --popover-foreground: 30 20% 90%;
-    --primary: 0 45% 45%;
-    --primary-foreground: 30 30% 95%;
-    --secondary: 20 15% 20%;
-    --secondary-foreground: 30 20% 85%;
-    --muted: 20 10% 25%;
-    --muted-foreground: 30 10% 60%;
-    --accent: 25 20% 25%;
-    --accent-foreground: 30 20% 90%;
-    --border: 20 15% 25%;
-    --input: 20 15% 25%;
-    --ring: 0 45% 45%;
+    /* Dark theme: Cozy night café / espresso bar */
+    --background: 20 40% 7%;
+    --foreground: 38 30% 92%;
+
+    --card: 22 35% 11%;
+    --card-foreground: 38 30% 92%;
+
+    --popover: 22 35% 11%;
+    --popover-foreground: 38 30% 92%;
+
+    /* Copper/bronze accent in dark mode */
+    --primary: 30 75% 55%;
+    --primary-foreground: 20 40% 8%;
+
+    --secondary: 25 25% 16%;
+    --secondary-foreground: 35 25% 80%;
+
+    --muted: 25 20% 18%;
+    --muted-foreground: 35 15% 55%;
+
+    --accent: 28 35% 20%;
+    --accent-foreground: 38 30% 92%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 25% 18%;
+    --input: 25 25% 18%;
+    --ring: 30 75% 55%;
+
+    /* Dark mode coffee palette */
+    --coffee-dark: 38 35% 88%;
+    --coffee-medium: 35 25% 70%;
+    --coffee-light: 30 20% 45%;
+    --cream: 35 35% 22%;
+    --warm-white: 30 25% 14%;
+    --espresso: 20 50% 6%;
+    --caramel: 32 70% 58%;
+    --copper: 28 70% 58%;
+
+    --gradient-hero: linear-gradient(165deg, hsl(20 40% 7%) 0%, hsl(22 35% 10%) 50%, hsl(25 30% 12%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(25 35% 14% / 0.9) 0%, hsl(22 30% 11% / 0.95) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(30 75% 55%) 0%, hsl(35 70% 60%) 100%);
+    --shadow-soft: 0 8px 40px hsl(0 0% 0% / 0.4);
+    --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.3), 0 1px 3px hsl(0 0% 0% / 0.2);
+    --shadow-button: 0 4px 25px hsl(30 75% 55% / 0.4), 0 2px 10px hsl(30 75% 55% / 0.25);
+    --shadow-glow: 0 0 50px hsl(30 75% 55% / 0.2);
   }
 }
 
@@ -78,52 +116,122 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
+    background: var(--gradient-hero);
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Subtle grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.025;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .dark body::before {
+    opacity: 0.04;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+
+  /* Better text rendering */
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 }
 
 @layer components {
+  /* Refined glass card with better dark mode support */
   .glass-card {
     background: var(--gradient-card);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsl(30 30% 90% / 0.5);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    border: 1px solid hsl(var(--border) / 0.6);
     box-shadow: var(--shadow-card);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .dark .glass-card {
+    border-color: hsl(var(--border) / 0.4);
+    box-shadow: var(--shadow-card), inset 0 1px 0 hsl(var(--foreground) / 0.03);
+  }
+
+  .glass-card:hover {
+    box-shadow: var(--shadow-soft);
+    border-color: hsl(var(--border) / 0.8);
+  }
+
+  /* Coffee button with glow effect */
   .coffee-btn {
-    @apply px-6 py-3 rounded-full font-medium transition-all duration-300;
-    background: hsl(var(--primary));
+    @apply px-6 py-3 rounded-full font-semibold transition-all duration-300 relative overflow-hidden;
+    background: var(--gradient-accent);
     color: hsl(var(--primary-foreground));
     box-shadow: var(--shadow-button);
+    letter-spacing: 0.01em;
+  }
+
+  .coffee-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, hsl(0 0% 100% / 0.15) 0%, transparent 50%);
+    pointer-events: none;
   }
 
   .coffee-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px hsl(0 50% 30% / 0.35);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: var(--shadow-button), var(--shadow-glow);
+  }
+
+  .coffee-btn:active {
+    transform: translateY(-1px) scale(0.99);
   }
 
   .section-padding {
-    @apply px-4 md:px-8 lg:px-16 xl:px-24;
+    @apply px-5 md:px-10 lg:px-20 xl:px-28;
   }
 
   .heading-display {
     font-family: var(--font-heading);
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] tracking-tight;
     color: hsl(var(--coffee-dark));
   }
 
+  .heading-section {
+    font-family: var(--font-heading);
+    @apply text-3xl md:text-4xl lg:text-5xl leading-[1.15] tracking-tight;
+    color: hsl(var(--coffee-dark));
+  }
+
+  /* Text utilities with better contrast */
   .text-coffee-dark {
     color: hsl(var(--coffee-dark));
   }
 
   .text-coffee-medium {
     color: hsl(var(--coffee-medium));
+  }
+
+  .text-caramel {
+    color: hsl(var(--caramel));
   }
 
   .bg-cream {
@@ -133,24 +241,149 @@
   .bg-warm-white {
     background-color: hsl(var(--warm-white));
   }
+
+  .bg-espresso {
+    background-color: hsl(var(--espresso));
+  }
+
+  /* Decorative elements */
+  .accent-line {
+    @apply h-1 w-12 rounded-full;
+    background: var(--gradient-accent);
+  }
+
+  .accent-dot {
+    @apply w-2 h-2 rounded-full;
+    background: hsl(var(--caramel));
+  }
+
+  /* Badge/tag styling */
+  .coffee-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium;
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  /* Icon container */
+  .icon-container {
+    @apply flex items-center justify-center rounded-2xl transition-all duration-300;
+    background: hsl(var(--accent) / 0.6);
+    box-shadow: inset 0 1px 0 hsl(var(--foreground) / 0.03);
+  }
+
+  .icon-container:hover {
+    background: hsl(var(--accent));
+    transform: scale(1.08);
+  }
 }
 
 @layer utilities {
+  /* Float animation - smoother */
   .animate-float {
-    animation: float 6s ease-in-out infinite;
+    animation: float 7s ease-in-out infinite;
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    33% {
+      transform: translateY(-8px) rotate(0.5deg);
+    }
+    66% {
+      transform: translateY(-4px) rotate(-0.5deg);
+    }
   }
 
+  /* Fade in up with stagger support */
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in-delay-1 {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-delay-3 {
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+    opacity: 0;
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Gentle pulse for emphasis */
+  .animate-pulse-soft {
+    animation: pulseSoft 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.85;
+      transform: scale(1.02);
+    }
+  }
+
+  /* Shimmer effect for loading/hover states */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--foreground) / 0.04) 50%,
+      transparent 100%
+    );
+    transform: translateX(-100%);
+    animation: shimmer 2s infinite;
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Smooth theme transition */
+  .theme-transition {
+    transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  /* Glow effect on hover */
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    background: var(--gradient-accent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

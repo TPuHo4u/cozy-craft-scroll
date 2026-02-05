@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Playfair Display", "serif"],
-        body: ["Inter", "sans-serif"],
+        heading: ["DM Serif Display", "serif"],
+        body: ["Instrument Sans", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -58,6 +58,9 @@ export default {
         },
         cream: "hsl(var(--cream))",
         "warm-white": "hsl(var(--warm-white))",
+        espresso: "hsl(var(--espresso))",
+        caramel: "hsl(var(--caramel))",
+        copper: "hsl(var(--copper))",
       },
       borderRadius: {
         lg: "var(--radius)",
