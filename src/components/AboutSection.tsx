@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import latteImg from '@/assets/latte.png';
 import coffeeBeansImg from '@/assets/coffee-beans.png';
 
@@ -23,9 +24,9 @@ const AboutSection = () => {
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <button className="coffee-btn">
+            <Link to="/learn-more" className="coffee-btn inline-block">
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -40,9 +41,9 @@ const AboutSection = () => {
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
               when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <button className="coffee-btn">
+            <Link to="/learn-more" className="coffee-btn inline-block">
               Learn More
-            </button>
+            </Link>
           </div>
           <div className="relative flex justify-center">
             {/* Large Circle with Image */}
