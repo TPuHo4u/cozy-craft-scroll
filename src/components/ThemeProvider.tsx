@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="light"
       enableSystem
       disableTransitionOnChange
     >
@@ -17,4 +17,3 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
     </NextThemesProvider>
   );
 };
-
